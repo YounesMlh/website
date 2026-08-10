@@ -976,6 +976,26 @@ p{
     }
 
 
+    .mobile-menu-close {
+        width: 45px;
+        height: 45px;
+
+        border: 1px solid currentColor;
+        background: transparent;
+
+        color: inherit;
+
+        font-size: 28px;
+        line-height: 1;
+
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
     /* Navigation */
 
     .mobile-menu-nav {
@@ -1035,24 +1055,7 @@ p{
     .mobile-menu-link.active {
         padding-left: 12px;
     }
-    
-    @media (max-width: 768px) {
-    .character-grid {
-        position: relative;
-        z-index: 5;
-    }
 
-    .character-card {
-        position: relative;
-        z-index: 10;
-
-        width: 100%;
-        box-sizing: border-box;
-
-        cursor: pointer;
-        pointer-events: auto;
-    }
-}
 
     /* Overlay */
 
