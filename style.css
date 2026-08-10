@@ -976,26 +976,6 @@ p{
     }
 
 
-    .mobile-menu-close {
-        width: 45px;
-        height: 45px;
-
-        border: 1px solid currentColor;
-        background: transparent;
-
-        color: inherit;
-
-        font-size: 28px;
-        line-height: 1;
-
-        cursor: pointer;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
     /* Navigation */
 
     .mobile-menu-nav {
@@ -1055,7 +1035,24 @@ p{
     .mobile-menu-link.active {
         padding-left: 12px;
     }
+    
+    @media (max-width: 768px) {
+    .character-grid {
+        position: relative;
+        z-index: 5;
+    }
 
+    .character-card {
+        position: relative;
+        z-index: 10;
+
+        width: 100%;
+        box-sizing: border-box;
+
+        cursor: pointer;
+        pointer-events: auto;
+    }
+}
 
     /* Overlay */
 
@@ -1560,3 +1557,83 @@ p{
                 margin: 0 10px;
             }
         }
+
+/* Additional mobile fixes: ensure elements fit well on small screens */
+@media (max-width: 768px) {
+
+    /* Make images always responsive */
+    img, .explore-card img, .explore-feature-image img, .explore-wide img { 
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Ensure boxes and small containers don't overflow */
+    .textbox, .p100, .box {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    /* Stack hero buttons vertically on narrow screens */
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+
+    /* Reduce big paddings and heights that cause excessive scrolling */
+    .explore-village { padding: 60px 6%; }
+    .explore-feature-image { min-height: 320px; }
+    .explore-wide { min-height: auto; }
+    .explore-wide-text { left: 20px; bottom: 20px; max-width: 70%; }
+
+    /* Smaller headings on mobile */
+    .explore-header h2, .word-wall-header h2, .character-header h2, .section-title {
+        font-size: clamp(24px, 6vw, 44px);
+    }
+
+    h1 { font-size: clamp(20px, 6vw, 32px); }
+
+    /* Narrow nav container and smaller brand text */
+    .navbar-container { top: 12px; width: calc(100% - 30px); left: 50%; transform: translateX(-50%); }
+    .brand-text { font-size: 1rem; }
+
+    /* Demo and content spacing */
+    .demo-container { padding: 20px 12px; }
+    .content-section { padding: 50px 12px 30px; }
+
+}
+
+@media (max-width: 480px) {
+
+    /* Further reduce paddings and fonts */
+    .explore-village { padding: 50px 16px; }
+    .explore-feature-image { min-height: 260px; }
+    .explore-grid { gap: 12px; }
+    .character-grid { gap: 12px; }
+
+    .explore-header h2, .word-wall-header h2, .character-header h2 { font-size: clamp(20px, 7vw, 36px); }
+    h1 { font-size: clamp(18px, 7vw, 28px); }
+
+    .brand-text { font-size: 0.95rem; }
+
+    /* Make mobile menu take most of viewport but avoid horizontal overflow */
+    .mobile-menu { width: 90vw; padding: 18px; }
+
+    /* Ensure text boxes wrap and don't force horizontal scrolling */
+    p, .textbox p, .explore-card-info p, .character-card p { font-size: 15px; }
+
+}
+
+@media (max-width: 360px) {
+    /* Very small phones: tighten spacing */
+    .navbar-container { top: 8px; }
+    .demo-container { padding: 16px 10px; }
+    .explore-village { padding: 40px 12px; }
+    .hero-buttons { gap: 8px; }
+    .mobile-menu { width: 95vw; }
+}
+
