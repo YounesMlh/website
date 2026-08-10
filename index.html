@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+    <title>Bordj-Mira Unofficial Website</title>
+    </head>
+    <body>
+            <!-- Floating Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+        <div class="floating-circle"></div>
+    </div>
+
+    <!-- Advanced Navigation Bar -->
+    <nav class="navbar-container">
+        <div class="navbar">
+            <!-- Brand/Logo -->
+            <a href="#" class="navbar-brand">
+                <div class="logo-icon"></div>
+                <span class="brand-text">BJM</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="navbar-nav" id="navbarNav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <svg class="nav-icon" viewBox="0 0 24 24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <span>EXPLORE THE VILLAGE</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <span>ENTER THE CHAOS</span>
+                    </a>
+                </li>
+               
+            </ul>
+
+            <!-- Mobile Toggle -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#" class="mobile-menu-brand">
+                <div class="logo-icon"></div>
+                <span class="brand-text">NeoNav</span>
+            </a>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <span>×</span>
+            </button>
+        </div>
+        
+        <ul class="mobile-menu-nav">
+            <li class="mobile-menu-item">
+                <a href="#home" class="mobile-menu-link active">
+                    <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                    </svg>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#about" class="mobile-menu-link">
+                    <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#services" class="mobile-menu-link">
+                    <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#portfolio" class="mobile-menu-link">
+                    <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 3h6v4"></path>
+                        <path d="m22 7-10-4-10 4"></path>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="mobile-menu-item">
+                <a href="#contact" class="mobile-menu-link">
+                    <svg class="mobile-menu-icon" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="mobile-cta">
+            <a href="#cta" class="mobile-cta-button">
+                Get Started
+            </a>
+        </div>
+    </div>
+
+    <!-- Demo Content -->
+    <div class="demo-container">        <!-- Home Section -->
+        <section id="home" class="content-section">
+            <h1>Welcome To Bordj-Mira</h1>
+       <div class="box"><p>Small place. Big Stories</p>
+    </div>
+       <div class="describtion">
+        <h2>Somewhere between the mountains,the road, and.."where are we meeting?"</h2>
+        <div class="textbox">
+    
+    <p06>Messenger App<br>
+        Somewhere between the mountains, the road, and “just come outside.”<br>
+        Somewhere between the mountains, the road, and “we're already here.”<br>
+        Somewhere between the mountains, the road, and “same place, same people.”<br>
+        Somewhere between the mountains, the road, and “nothing planned, as usual.”<br>
+        Somewhere between the mountains, the road, and “we'll figure it out.”<br>
+        Somewhere between the mountains, the road, and “it's not that far.”<br>
+        AGHHHHHHHH.................!!!!!!
+    </p06>
+</div>
+
+<div class="hero-buttons">
+
+    <a href="#about" class="btn btn-primary">
+        EXPLORE THE VILLAGE
+    </a>
+
+    <a href="#services" class="btn btn-secondary">
+        ENTER THE CHAOS →
+    </a>
+
+</div>
+
+    </div>
+
+    <div class="scroll-indicator">
+        <span>SCROLL TO EXPLORE</span>
+        <div>↓</div>
+    </div>
+   </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+           <!-- EXPLORE THE VILLAGE -->
+
+<div class="explore-village">
+
+    <div class="explore-header">
+        <span>01</span>
+        <h2>EXPLORE THE VILLAGE</h2>
+        <p>
+            The places, roads and views that make Bordj-Mira home.
+        </p>
+    </div>
+
+
+    <!-- FEATURED PLACE -->
+
+    <div class="explore-feature">
+
+        <div class="explore-feature-image">
+            <img src="IMG_20250711_190843.jpg" alt="Bordj-Mira">
+        </div>
+
+        <div class="explore-feature-info">
+            <span>01 · FEATURED</span>
+
+            <h3>“4K was not available in Bordj-Mira.”<br>😭</h3>
+
+            <p>
+                A view of Bordj-Mira in one frame — the mountains, the roads, and the place we call home.
+            </p>
+
+            <a href="#">DISCOVER →</a>
+        </div>
+
+    </div>
+
+
+    <!-- PLACES -->
+
+    <div class="explore-title">
+        <span>02</span>
+        <h3>PLACES</h3>
+    </div>
+
+    <div class="explore-grid">
+
+        <div class="explore-card">
+
+            <img src="IMG_20260809_125949_868.jpg" alt="Place">
+
+            <div class="explore-card-info">
+                <span>PLACE</span>
+                <h3>MATECO</h3>
+                <p>The place where every plan somehow ends up. Football, late nights, endless conversations, and memories we probably shouldn't explain.</p>
+            </div>
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="IMG-20260418-WA0027.jpg" alt="Place">
+
+            <div class="explore-card-info">
+                <span>PLACE</span>
+                <h3>TASIFT</h3>
+                <p>A quiet little river surrounded by nature — perfect for a run, a walk, or just escaping the noise for a while. 🌿🏃‍♂️</p>
+            </div>
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="1.png" alt="Place">
+
+            <div class="explore-card-info">
+                <span>PLACE</span>
+                <h3>MAIN ROAD</h3>
+                <p> The main road — where every trip starts, every plan passes through, and somehow everyone knows exactly where you are. 🛣️
+</p>
+            </div>
+
+        </div>
+
+       
+        <div class="explore-card">
+
+            <img src="2.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="3.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="4.png" alt="Place">
+
+
+
+        </div>
+
+        <div class="explore-card">
+
+            <img src="5.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="6.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="7.png" alt="Place">
+
+
+        </div>
+        
+         <div class="explore-card">
+
+            <img src="8.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="9.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="10.png" alt="Place">
+
+
+
+        </div>
+        <div class="explore-card">
+
+            <img src="11.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="12.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="13.png" alt="Place">
+
+
+
+        </div>
+
+        <div class="explore-card">
+
+            <img src="14.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="15.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="16.png" alt="Place">
+
+
+        </div>
+        
+         <div class="explore-card">
+
+            <img src="17.png" alt="Place">
+
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="18.png" alt="Place">
+
+        </div>
+
+
+        <div class="explore-card">
+
+            <img src="19.png" alt="Place">
+
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- NATURE / VIEW -->
+
+    <div class="explore-wide">
+
+        <img src="20.png" alt="Bordj-Mira landscape">
+
+        <div class="explore-wide-text">
+
+            <span>03 · THE VIEW</span>
+
+            <h2>THE MOUNTAINS</h2>
+
+        </div>
+
+    </div>
+
+
+    <!-- FOOTBALL -->
+
+    <div class="explore-split">
+
+        <div class="explore-split-text">
+
+            <span>04 · FOOTBALL</span>
+
+            <h2>WHERE WE PLAY</h2>
+
+            <p>
+                The big stadium — where the game feels different, the noise gets louder, and every match feels like it matters.
+            </p>
+
+        </div>
+
+        <div class="explore-split-image">
+            <img src="place8.jpg" alt="Football">
+        </div>
+
+    </div>
+
+
+    <!-- THE ROAD -->
+
+     <div class="explore-wide">
+
+        
+        <img src="22.png" alt="The Road">
+        <div class="explore-wide-text">
+
+        <h2>WHERE ARE WE MEETING?</h2>
+
+        <p>
+            Every plan starts here.
+        </p>
+        </div>
+
+    </div>
+
+</div>
+           
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="content-section">
+             <div class="p100">
+                <p100>Messenger App</p100>
+            <h3>“WHO ARE YOU?”</h3></div>
+           <div class="character-header">
+    <span>03</span>
+    <h2>WHO ARE YOU?</h2>
+    <p>Which Bordj-Mira character are you?</p>
+</div>
+
+<div class="character-grid">
+
+    <div class="character-card">
+        <div class="character-icon">⚽</div>
+        <h3>THE FOOTBALL EXPERT</h3>
+        <p>“Has an opinion about every player ever.”</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-icon">💵</div>
+        <h3>THE BROKE ONE</h3>
+        <p>I forgot my wallet again.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-icon">☕ </div>
+        <h3>THE CAFÉ REGULAR</h3>
+        <p>Knows everyone.<br>
+Knows everything.<br>
+Probably knows what happened yesterday.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-icon">📱</div>
+        <h3>THE GROUP CHAT GUY</h3>
+        <p>700 messages.<br>
+3% useful information.</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-icon">🧠</div>
+        <h3>THE PLANNER</h3>
+        <p>“Has a plan nobody follows”</p>
+    </div>
+
+    <div class="character-card">
+        <div class="character-icon">🚗</div>
+        <h3>THE DRIVER</h3>
+        <p>"I'm coming."<br>
+25 minutes later: still at home.</p>
+    </div>
+    <div class="character-card">
+        <div class="character-icon">🧤</div>
+        <h3>THE GOALKEEPER</h3>
+        <p>“Always ready for the match<br>
+Somehow the goal is always your fault.”</p>
+    </div>
+ <div class="character-card">
+        <div class="character-icon">😂</div>
+        <h3> THE COMEDIAN</h3>
+        <p>Doesn't contribute anything useful to the group.
+Somehow everyone needs him.</p>
+    </div>
+</div>
+
+<button class="character-ok">OK</button>
+<div class="word-wall">
+
+    <div class="word-wall-header">
+        <span>OUR DICTIONARY</span>
+        <h2>THE BORDJ-MIRA DICTIONARY</h2>
+        <p>Words were never our strongest skill.</p>
+    </div>
+
+    <div class="word-grid">
+
+        <div class="word-card">
+            <span class="word-number">01</span>
+
+            <h3>Bouberdas</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>Bouberdas</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>Boumerdas</strong>
+            </div>
+
+            <p>— Hakim</p>
+        </div>
+
+
+        <div class="word-card">
+            <span class="word-number">02</span>
+
+            <h3>katché</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>katché</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>cachet</strong>
+            </div>
+
+            <p>— Ayoub</p>
+        </div>
+
+
+        <div class="word-card">
+            <span class="word-number">03</span>
+
+            <h3>Ineqjed</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>Ineqjed</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>Ineqdech</strong>
+            </div>
+
+            <p>— Pz</p>
+        </div>
+
+
+        <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>kintour</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>kintour</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>conteur</strong>
+            </div>
+
+            <p>— Ayoub</p>
+        </div>
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>damiton</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>damiton</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>damaton</strong>
+            </div>
+
+            <p>— ithri</p>
+        </div>
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>lhmit</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>lhmit</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>lhmis</strong>
+            </div>
+
+            <p>— ayoub</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>gomblet</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>gomblet</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>complet</strong>
+            </div>
+
+            <p>— samy</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>nouritour</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>nouritour</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>narateur</strong>
+            </div>
+
+            <p>— leblad</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>20 30 mille</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>20 30 mille</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>230 mille</strong>
+            </div>
+
+            <p>— mouh</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>a valage</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>a valage</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>a vilage</strong>
+            </div>
+
+            <p>— moussa</p>
+        </div>
+
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>l'arteur</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>l'arteur</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>l'acrteur</strong>
+            </div>
+
+            <p>— hakim</p>
+        </div>
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>iparamizi</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>iparamizi</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>iparalizer</strong>
+            </div>
+
+            <p>— ithri</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>cristale balace</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>cristale balace</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>cristale palace</strong>
+            </div>
+
+            <p>— Pz</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>roule</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>roule</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>role</strong>
+            </div>
+
+            <p>— didin</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>slimple</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>slimple</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>simple</strong>
+            </div>
+
+            <p>— pilou</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>pitsa</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>pitsa</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>pitzza</strong>
+            </div>
+
+            <p>— Pz</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>simple vigalois</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>simple vigalois</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>simple villageois</strong>
+            </div>
+
+            <p>— Xavi</p>
+        </div>
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>la mwii</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>la mwii</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>la nuit</strong>
+            </div>
+
+            <p>— Rahim</p>
+        </div>
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>trisinti</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>trisinti
+                </strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>électricité</strong>
+            </div>
+
+            <p>— Anouar</p>
+        </div>
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>carbeau</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>carbeau</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>corbeau</strong>
+            </div>
+
+            <p>— Pilou</p>
+        </div>
+
+
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>l'amininiom</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>l'amininiom</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>l'aluminium</strong>
+            </div>
+
+            <p>— ithri</p>
+        </div>
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>kherata khoudir</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>kherata khoudir</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>kherata bejaia</strong>
+            </div>
+
+            <p>— ithri</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>saazeee</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>saazee</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>sage</strong>
+            </div>
+
+            <p>— Bibi</p>
+        </div>
+
+
+         <div class="word-card">
+            <span class="word-number">04</span>
+
+            <h3>amoune</h3>
+
+            <div class="correction">
+                <small>WE SAY</small>
+                <strong>amoune</strong>
+
+                <span>↓</span>
+
+                <small>ACTUALLY</small>
+                <strong>amane</strong>
+            </div>
+
+            <p>— Anouar</p>
+        </div>
+
+
+    </div>
+
+</div>
+        </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="#" class="footer-brand">
+                <div class="footer-logo"></div>
+                <span>BJM</span>
+            </a>
+            
+            <ul class="footer-links">
+                <li><a href="#home" class="footer-link">Home</a></li>
+                <li><a href="#about" class="footer-link">THE VILLAGE</a></li>
+                <li><a href="#services" class="footer-link">CHAOS</a></li>
+            
+            </ul>
+            
+            <div class="footer-social">
+                <a href="https://www.instagram.com/xavi_mlh/?__pwa=1" class="social-link">
+                    <svg class="social-icon" viewBox="0 0 24 24">
+                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>                    </svg>
+                </a>
+               
+            </div>
+        </div>
+        
+        <div class="footer-copy">
+            © 2026 Xavi Mlh— Bordj Mira
+No municipality approval was involved in the creation of this website. 😂
+        </div>
+    </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
