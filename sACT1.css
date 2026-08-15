@@ -1,0 +1,78 @@
+body{
+    
+    background-color: black;
+}
+.message{
+    margin-bottom: 50px;
+    margin-top: 25px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    flex-direction: column;
+    p1{
+        font-family: 'Courier New', Courier, monospace;
+        color: azure;
+    }
+
+}
+
+.card-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+/* Individual Card Style */
+.card {
+    align-items: center;
+    background: #101513;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(250, 250, 250, 0.1);
+    overflow-x: hidden;
+    width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+    padding: 20px;
+}
+
+.card h1 {
+    font-size: small;
+    color: #f7f4f4;
+    margin-bottom: 12px;
+}
+
+.card p3 {
+    font-size:small;
+    color: #cac5c5;
+}
+p5{
+    color: #f7f4f4;
+    display: flex;
+    justify-content: center;
+}
+.btn{
+     display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 50px;
+}

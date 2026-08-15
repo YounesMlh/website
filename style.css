@@ -347,6 +347,10 @@ body{
     background-color: #fffacd;
     color: #0a2e26;
 }
+.btn-pri{
+background-color: #11d8ad;
+    color: #272304;
+}
 
 .btn-secondary {
     background-color: #0a2e26;

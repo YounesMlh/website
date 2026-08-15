@@ -1,0 +1,35 @@
+
+body{
+  p1{
+    color: #880808;
+    font-size: x-large;
+    font-family: fantasy;
+   }
+    background-color: black;
+}
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+p2{
+    color: rgb(167, 164, 164);
+    font-family: courier;
+}
+p3{
+    color: rgb(167, 164, 164);
+    font-family: courier;
+}
+p4{
+    color: rgb(167, 164, 164);
+    font-family: courier;
+}
+.contenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    flex-direction: column;
+}

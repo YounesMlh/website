@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #050806;
+    color: #9cff9c;
+    font-family: "Courier New", monospace;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 15px;
+}
+
+
+/* ==============================
+   OLD COMPUTER SCREEN
+============================== */
+
+.detective-page {
+    width: min(1050px, 100%);
+
+    min-height: 700px;
+
+    background:
+        linear-gradient(
+            rgba(0, 255, 80, 0.025) 50%,
+            transparent 50%
+        );
+
+    background-size: 100% 4px;
+
+    background-color: #071008;
+
+    border: 3px solid #263b28;
+
+    box-shadow:
+        0 0 0 8px #111,
+        0 0 30px rgba(0, 255, 80, 0.12);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* CRT glow */
+
+.detective-page::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,0.015),
+            rgba(255,255,255,0.015) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+    z-index: 20;
+}
+
+
+/* ==============================
+   COMPUTER TOP BAR
+============================== */
+
+.case-header {
+
+    height: 55px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 25px;
+
+    background: #0b120c;
+
+    border-bottom: 2px solid #263b28;
+
+    color: #6f9b70;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* ==============================
+   CONTENT CONTAINER
+============================== */
+
+.location-intro,
+.location-page {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 60px 40px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* ==============================
+   TERMINAL LABEL
+============================== */
+
+.eyebrow {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #4f9a54;
+
+    margin-bottom: 18px;
+}
+
+
+/* ==============================
+   HEADINGS
+============================== */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    font-family: "Courier New", monospace;
+
+    font-size: clamp(35px, 6vw, 65px);
+
+    font-weight: bold;
+
+    color: #a7ffa7;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        0 0 5px rgba(80,255,80,0.4);
+}
+
+
+h2 {
+
+    color: #8cff8c;
+
+    font-weight: bold;
+
+}
+
+
+/* ==============================
+   NORMAL TEXT
+============================== */
+
+.location-intro > p:not(.eyebrow),
+.location-description {
+
+    color: #78b878;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+    max-width: 750px;
+}
+
+
+/* ==============================
+   LOCATION CARDS
+============================== */
+
+.locations {
+
+   
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 0 40px 50px;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+.location-card {
+
+    min-height: 180px;
+
+    display: grid;
+
+    grid-template-columns: 45px 55px 1fr;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 22px;
+
+    background: #09120a;
+
+    border: 1px solid #315235;
+
+    color: #8cff8c;
+
+    text-decoration: none;
+
+    transition: 0.15s;
+}
+
+
+.location-card:hover {
+
+    background: #102013;
+
+    border-color: #71d676;
+
+    box-shadow:
+        0 0 10px rgba(70,255,70,0.12);
+
+    transform: none;
+}
+
+
+.location-number {
+
+    color: #47794b;
+
+    font-size: 12px;
+}
+
+
+.location-icon {
+
+    font-size: 28px;
+
+    filter: grayscale(1);
+}
+
+
+.location-card h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.location-card p {
+
+    color: #609863;
+
+    line-height: 1.5;
+
+    font-size: 13px;
+
+    margin-bottom: 12px;
+}
+
+
+.investigate {
+
+    color: #83d783;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ==============================
+   SCENE BOX
+============================== */
+
+.scene-box {
+
+    background: #060d07;
+
+    border: 1px solid #315235;
+
+    margin: 35px 0;
+
+}
+
+
+/* Fake image / scene */
+
+.scene-image {
+
+    height: 280px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #0b160c;
+
+    border-bottom: 1px solid #315235;
+
+    color: #47794b;
+
+    font-size: 18px;
+
+    letter-spacing: 5px;
+}
+
+
+.scene-text {
+
+    padding: 30px;
+}
+
+
+.scene-text p {
+
+    color: #78b878;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   ACTION QUESTION
+============================== */
+
+.question {
+
+    font-size: 20px;
+
+    margin: 40px 0 20px;
+
+    color: #a0f7a0;
+}
+
+
+/* ==============================
+   ACTION BUTTONS
+============================== */
+
+.choices {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 40px;
+}
+
+
+.choice {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 17px 20px;
+
+    background: #081108;
+
+    border: 1px solid #315235;
+
+    color: #8ddd8d;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.15s;
+}
+
+
+.choice:hover {
+
+    background: #122015;
+
+    border-color: #82d982;
+
+    color: #b4ffb4;
+
+}
+
+
+.choice span {
+
+    color: #4d8c51;
+
+    font-size: 12px;
+}
+
+
+/* ==============================
+   BACK BUTTON
+============================== */
+
+.back-button {
+
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border: 1px solid #315235;
+
+    color: #639c67;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    transition: 0.15s;
+}
+
+
+.back-button:hover {
+
+    color: #a2ffa2;
+
+    border-color: #80d780;
+
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+.map-footer {
+
+    padding: 0 40px 40px;
+
+    position: relative;
+
+    z-index: 5;
+}
+
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 10px;
+
+        align-items: flex-start;
+
+    }
+
+
+    .detective-page {
+
+        min-height: calc(100vh - 20px);
+
+        box-shadow:
+            0 0 0 4px #111,
+            0 0 20px rgba(0,255,80,0.1);
+    }
+
+
+    .case-header {
+
+        padding: 0 15px;
+
+        font-size: 9px;
+
+    }
+
+
+    .location-intro,
+    .location-page {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .locations {
+
+        grid-template-columns: 1fr;
+
+        padding: 0 20px 30px;
+
+    }
+
+
+    .location-card {
+
+        min-height: 150px;
+
+    }
+
+
+    .scene-image {
+
+        height: 200px;
+
+    }
+
+
+    .scene-text {
+
+        padding: 20px;
+
+    }
+
+
+    .map-footer {
+
+        padding: 0 20px 30px;
+
+    }
+
+}
+.continue-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 28px;
+
+    border: 1px solid #5c9b60;
+    background: #091109;
+
+    color: #8cff8c;
+    text-decoration: none;
+    text-align: center;
+
+    font-family: "Courier New", monospace;
+    font-size: 50px;
+    letter-spacing: 2px;
+
+    transition: 0.2s;
+}
+
+.continue-button:hover {
+    background: #142016;
+    border-color: #9cff9c;
+    color: #b5ffb5;
+}
